@@ -1,69 +1,83 @@
-# Task Manager - React App
+# Task Manager
 
+Task Manager is a React application for managing tasks with Firebase Firestore integration.  
+The project demonstrates CRUD operations, client-side routing, task filtering, task archiving, and external API usage for dynamic background images and motivational quotes.
 
+## Features
 
+- Add new tasks with title, assignee, due date, priority, status, and description
+- Display tasks in a dynamic task list
+- Sort and search tasks
+- Mark tasks as completed
+- Move completed tasks to an archive
+- Delete tasks from the main list or archive
+- View full task details in a modal window
+- Store and update task data in Firebase Firestore
+- Navigate between pages using React Router
+- Display dynamic background images from an external API
+- Display rotating motivational quotes from an external API
 
-## 📌 התקנות שבוצעו
-לפני הפעלת הפרויקט, יש לוודא שהתקנתם את החבילות הבאות:
+## Tech Stack
+
+- React
+- JavaScript
+- React Router
+- Firebase Firestore
+- Bootstrap
+- React Bootstrap
+- animate.css
+- External API integration
+- Git
+- GitHub
+
+## Main Pages
+
+- Task list page
+- Add task page
+- Task archive page
+
+## Local Setup
+
+Clone the repository:
+
 ```bash
-npm install react-router-dom
-npm install firebase
-npm install bootstrap
-npm install react-bootstrap
-npm install animate.css
+git clone https://github.com/NikitaSayenko/Task-Manager.git
+cd Task-Manager
 ```
 
----
+Install dependencies:
 
-## 📌 תיאור האפליקציה
-**Task Manager** היא אפליקציה לניהול משימות הבנויה ב-**React.js** עם שימוש ב-**Firebase Firestore** לאחסון הנתונים.
-
-### ✨ תכונות עיקריות:
-1. **הוספת משימה חדשה** - המשתמש יכול להוסיף משימות חדשות עם הפרטים הבאים:
-   - נושא המשימה
-   - מבצע המשימה
-   - תאריך יעד
-   - עדיפות (גבוהה, בינונית, נמוכה)
-   - סטטוס המשימה
-   - תוכן מפורט של המשימה
-2. **רשימת משימות דינאמית** - כל המשימות מופיעות בטבלה ממיינת שמאפשרת:
-   - מיון לפי עדיפות או לפי תאריך יעד
-   - חיפוש משימות לפי שם או מבצע
-   - הצגת סטטוס המשימה (ממתינה/הושלמה)
-3. **סימון משימות שהושלמו** - משימות שהושלמו יהפכו לאפורות ויירדו לתחתית הרשימה.
-4. **העברת משימות שהושלמו לארכיון** - משתמשים יכולים לארכב משימות כדי לשמור היסטוריית ביצועים.
-5. **מחיקת משימות** - ניתן למחוק משימות הן מהעמוד הראשי והן מעמוד הארכיון, המחיקה נעשית גם ב-Firebase Firestore.
-6. **תצוגה של תוכן המשימה** - לחיצה על משימה מציגה תוכן מלא של המשימה בחלון מודאלי (popup).
-7. **תמונה יומית של NASA כרקע דינאמי** - כל חצי דקה הרקע של האפליקציה מתעדכן עם תמונה חדשה מ-API של NASA.
-8. **ציטוטים מתחלפים כל 10 שניות** - מוצג ציטוט השראה אקראי שמתעדכן אוטומטית עם אנימציה יפה.
-9. **ניווט בין דפים באמצעות React Router**:
-   - דף הבית (רשימת משימות)
-   - דף הוספת משימה
-   - דף ארכיון משימות
-
----
-
-## 📌 טכנולוגיות וכלים בשימוש:
-| טכנולוגיה | תיאור |
-|------------|-----------------------------------------------------------------|
-| ⚛ **React.js** | פיתוח ממשקי משתמש אינטראקטיביים |
-| 🔥 **Firebase Firestore** | מסד נתונים NoSQL מבוסס ענן לניהול המשימות |
-| 🚀 **React Router** | ניהול הניווט בין עמודים באפליקציה |
-| 🎭 **Bootstrap** | עיצוב בסיסי, טבלאות וכפתורים |
-| 🖌 **animate.css** | הוספת אנימציות חלקות לציטוטים ולתמונות |
-| 📡 **NASA APOD API** | שליפת תמונות יומיות מהחלל כרקע לאפליקציה |
-| 📝 **ZenQuotes API** | שליפת ציטוטים רנדומליים שמתעדכנים אוטומטית |
-
----
-
-## 📌 איך להפעיל את האפליקציה?
 ```bash
-npm install  
-npm start   
+npm install
 ```
 
+Run the development server:
 
-🚀 **בהצלחה!**
+```bash
+npm start
+```
 
+Open the app in the browser:
 
+```text
+http://localhost:3000
+```
 
+## Project Focus
+
+This project focuses on practical React and Firebase development:
+
+- Component-based UI development
+- Managing task data in Firestore
+- CRUD operations
+- Client-side routing
+- Search and sorting logic
+- Modal-based task details
+- Archive workflow for completed tasks
+- Working with external APIs
+- Responsive UI styling with Bootstrap
+
+## Author
+
+Nikita Sayenko  
+GitHub: https://github.com/NikitaSayenko
